@@ -1,0 +1,121 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image111.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image111.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image200.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image200.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image24.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image24.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image302.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image302.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image339.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image339.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image347.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image347.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image348.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image348.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image385.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image385.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image40.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image40.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image431.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image431.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image442.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image442.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image549.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image549.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image56.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image56.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image566.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image566.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image596.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image596.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image627.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image627.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image653.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image653.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image672.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image672.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image676.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image676.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image685.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image685.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image720.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image720.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image802.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image802.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image830.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image830.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image936.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image936.jpg"
+    },
+    {
+      "Id": "D:\\Backend\\MobileBackend\\wwwroot\\upload\\images\\00001\\image988.jpg",
+      "PackagePath": "staticwebassets\\upload\\images\\00001\\image988.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.MobileBackend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.MobileBackend.props",
+      "PackagePath": "build\\MobileBackend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.MobileBackend.props",
+      "PackagePath": "buildMultiTargeting\\MobileBackend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.MobileBackend.props",
+      "PackagePath": "buildTransitive\\MobileBackend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
