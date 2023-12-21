@@ -36,16 +36,16 @@ public class Home
     public string? Slogan { get; set; }
 
     [BsonElement("members")]
-    public required List<Member> Members { get; set; }
+    public List<Member>? Members { get; set; }
 
     [BsonElement("createBy")]
-    public required string CreatedBy { get; set; }
+    public string? CreatedBy { get; set; }
 
     [BsonElement("createDate")]
-    public DateTime CreateDate { get; set; }
+    public DateTime? CreateDate { get; set; }
 
     [BsonElement("isPublic")]
-    public int IsPublic { get; set; } = 0;
+    public int? IsPublic { get; set; } = 0;
 
     [BsonElement("isDel")]
     public int IsDel { get; set; } = 0;
@@ -58,4 +58,15 @@ public class Home
 
     [BsonElement("delDate")]
     public DateTime? DelDate { get; set; }
+
+    public Home(string? homeId, string? name, string? image, string? slogan, List<Member>? members, string? createdBy, DateTime? createDate )
+    {
+        HomeId = homeId;
+        Name = name;
+        Image = image;
+        Slogan = slogan;
+        Members = members;
+        CreatedBy = createdBy;
+        CreateDate = createDate;
+    }
 }

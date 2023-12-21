@@ -56,13 +56,18 @@ public class HomeResponsitory : IHomeResponsitory
     public async Task<bool> Create(Home home)
     {
 
-            await _homeCollection.InsertOneAsync(home);
-            bool success = await funcCommons.UpdateRoleMember(home.CreatedBy, RoleUserConstants.CreateHome);
-            if (success)
-            {
-                return true;
-            }
+        await _homeCollection.InsertOneAsync(home);
+        bool success = await funcCommons.UpdateRoleMember(home.CreatedBy, RoleUserConstants.CreateHome);
+        if (success)
+        {
+            return true;
+        }
+        else
+        {
+            var existingFilter = Builders<Home>.Filter.Eq(x => x.HomeId, home.HomeId);
+            await _homeCollection.FindOneAndDeleteAsync(existingFilter);
             return false;
+        }
 
     }
 

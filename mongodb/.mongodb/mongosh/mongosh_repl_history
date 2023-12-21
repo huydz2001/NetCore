@@ -1,0 +1,8 @@
+db.movies.find()
+show collections
+use sample_mflix
+clear
+show dbs
+exit
+show dbs
+show dbs;

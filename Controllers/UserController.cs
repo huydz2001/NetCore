@@ -157,12 +157,21 @@ public class UserController : ControllerBase
         {
             if (fileImage.Length > 0)
             {
-                string filePath = environment.WebRootPath + "\\upload\\images\\" + id ;
+                string filePath = environment.WebRootPath + "\\upload\\images\\users\\" + id ;
                 string imagePath = filePath + "\\" + fileImage.FileName.Split('.')[0] + DateTime.Now.Millisecond+ "." + fileImage.FileName.Split('.')[1];
 
                 if (!Directory.Exists(filePath))
                 {
                     Directory.CreateDirectory(filePath);
+                }
+                else
+                {
+                    DirectoryInfo directory = new DirectoryInfo(filePath);
+                    // Delete each file
+                    foreach (FileInfo file in directory.GetFiles())
+                    {
+                        file.Delete();
+                    }
                 }
 
                 

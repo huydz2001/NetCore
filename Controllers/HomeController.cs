@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using MobileBackend.IService;
 using MobileBackend.Models.Home;
 using MobileBackend.Models.User;
+using MobileBackend.Services;
+using Newtonsoft.Json;
+using System;
 
 namespace MobileBackend.Controllers;
 [ApiController]
@@ -11,9 +14,11 @@ public class HomeController : ControllerBase
 {
     private readonly IHomeService _homeService;
 
+
     public HomeController(IHomeService homeService)
     {
         _homeService = homeService;
+
     }
 
     [HttpGet]
@@ -60,32 +65,6 @@ public class HomeController : ControllerBase
         }
     }
 
-    [HttpPost]
-    [Authorize]
-    public async Task<ActionResult<Home>> Create(Home home)
-    {
-        try
-        {
-            int totalHome = _homeService.GetAll().Result.Count;
-
-            if (totalHome < 9999)
-            {
-                home.HomeId = (totalHome + 1).ToString().PadLeft(5, '0');
-            }
-            else home.HomeId = (totalHome + 1).ToString();
-            Console.WriteLine(home.HomeId);
-
-            if (await _homeService.Create(home))
-            {
-                return Ok("Create success");
-            }
-            return NotFound("Create failed");
-        }
-        catch (Exception ex)
-        {
-            return StatusCode(400, ex.Message);
-        }
-    }
 
     [HttpPost("{id}/addMember")]
     [Authorize]
@@ -139,6 +118,28 @@ public class HomeController : ControllerBase
         catch (Exception ex)
         {
             return StatusCode(400, ex.Message);
+        }
+    }
+
+    [HttpPost("addWithImage")]
+    [Authorize]
+    public async Task<ActionResult> AddHomeWithImage([FromForm] string jsonData, IFormFile? fileImage)
+    {
+        try
+        {
+            HomeCreate? home = JsonConvert.DeserializeObject<HomeCreate>(jsonData);
+
+            if(await _homeService.Create(home, fileImage))
+            {
+                return Ok("success");
+            }
+            return BadRequest();
+            
+
+        }
+        catch (Exception)
+        {
+            return StatusCode(500);
         }
     }
 

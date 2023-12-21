@@ -8,7 +8,7 @@ public interface IHomeService
 {
     Task<List<Home>> GetAll();
     Task<HomeWithUser> GetById(string homeId);
-    Task<bool> Create(Home home);
+    Task<bool> Create(HomeCreate? home, IFormFile? img);
     Task<bool> AddMember(string homeId, Member member);
     Task<bool> DeleteMember(string homeId, string userId);
     Task<bool> UpdateHome(string homeId, HomeInfor homeInfor);
